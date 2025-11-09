@@ -1,50 +1,56 @@
-# Tensile-Data-Analysis
-# Dự án 1: Phân tích Dữ liệu Thí nghiệm Kéo Nén
+# ⚡ Optimizing Energy Consumption for a Hydrogen Fuel Cell Power System in UAV Applications
 
-Đây là một dự án Python đơn giản để minh họa các kỹ năng giao thoa giữa Khoa học Vật liệu và Khoa học Dữ liệu.
+This repository explores two complementary approaches — **Data Science** and **Materials Science** — to optimize hydrogen fuel cell systems for UAV applications.
 
-Dự án này tự động đọc các file dữ liệu (`.csv`) thô từ máy thí nghiệm kéo nén, sau đó:
-1.  Làm sạch và xử lý dữ liệu.
-2.  Tính toán các đặc tính cơ học quan trọng (Modulus Young, Độ bền kéo, Độ dãn dài).
-3.  Trực quan hóa và so sánh đường cong ứng suất-biến dạng của các mẫu.
+---
 
-## 🛠️ Công nghệ sử dụng
-* **Python**
-* **Pandas:** Để tải, làm sạch và quản lý dữ liệu.
-* **NumPy:** Để thực hiện các phép tính khoa học (đặc biệt là `polyfit` để tìm Modulus).
-* **Matplotlib:** Để trực quan hóa kết quả.
+## 🔬 1️⃣ Project 1: Fuel Cell Efficiency Optimization (Data Science)
 
-## 🏃 Cách chạy dự án
+**Goal:** Predict and optimize hydrogen fuel cell efficiency using machine learning.
 
-1.  **Cài đặt thư viện:**
-    ```bash
-    pip install pandas numpy matplotlib
-    ```
+**Tech Stack:** `Python`, `scikit-learn`, `Streamlit`, `pandas`, `matplotlib`
 
-2.  **Chuẩn bị dữ liệu:**
-    Tạo các file `sample_A.csv` và `sample_B.csv` (hoặc bất kỳ file `.csv` nào có 2 cột `Displacement(mm)` và `Force(N)`) trong cùng thư mục.
+**Highlights:**
+- Synthetic dataset of UAV fuel cell operating conditions
+- Random Forest model to predict efficiency
+- Streamlit app for real-time predictions
 
-3.  **Chạy script:**
-    ```bash
-    python analyze_tensile_data.py
-    ```
+📂 Folder: `fuelcell-efficiency-optimization/`  
+🧠 Model: RandomForestRegressor (R² ≈ 0.93)
 
-## 📊 Kết quả
+---
 
-Script sẽ tự động tạo ra một biểu đồ so sánh các mẫu và lưu lại dưới dạng `output_stress_strain_curves.png`.
+## ⚗️ 2️⃣ Project 2: PEM Materials Simulation (Materials Science)
 
-#### Biểu đồ Ứng suất - Biến dạng
-![Biểu đồ Stress-Strain](output_stress_strain_curves.png)
+**Goal:** Analyze and design Proton Exchange Membranes (PEM) with better cost-performance tradeoffs.
 
-#### Bảng Tổng hợp Đặc tính
-Script cũng sẽ in ra một bảng so sánh các đặc tính đã tính toán (ở định dạng Markdown):
+**Tech Stack:** `Python`, `scikit-learn`, `matplotlib`, `joblib`
 
-| Sample Name | Young's Modulus (GPa) | UTS (MPa) | Fracture Strain (%) |
-|:------------|:------------------------|:----------|:----------------------|
-| sample_A | 25.07 | 680.00 | 4.40 |
-| sample_B | 33.32 | 792.00 | 4.00 |
+**Highlights:**
+- Data-driven prediction of PEM efficiency
+- Pareto front visualization for cost vs efficiency
+- Synthetic dataset simulating real PEM materials
 
-*(Lưu ý: Các con số này có thể thay đổi một chút dựa trên dữ liệu)*
+📂 Folder: `pem-materials-simulation/`  
+📈 Visualization: Pareto front of cost-efficiency
 
-## 🔬 Ý nghĩa (Context)
-Dự án này mô phỏng một tác vụ cơ bản nhưng quan trọng trong R&D vật liệu. Việc tự động hóa quy trình này giúp các nhà nghiên cứu tiết kiệm thời gian, giảm lỗi do tính toán thủ công và dễ dàng so sánh hàng chục mẫu thử một cách trực quan.
+---
+
+## 💡 Research Context
+
+Hydrogen Fuel Cells are a promising clean power source for UAVs.  
+This repository demonstrates how **data analysis** and **materials modeling** can be combined to:
+- Reduce energy consumption
+- Improve flight duration
+- Optimize material design for next-gen UAV power systems
+
+---
+
+## 👨‍💻 Author
+
+**[Minh Truong Dang](https://github.com/<your-username>)**  
+Student in Materials Science & Data Science  
+University of Science, Ho Chi Minh City  
+
+📫 Email: your.email@example.com  
+🌐 LinkedIn: [linkedin.com/in/<your-link>](https://linkedin.com/in/<your-link>)
